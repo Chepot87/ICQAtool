@@ -1,0 +1,59 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Walmart Inventory QA Log</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/svg+xml" href="norvak-tinygpt-version.png">
+  <link rel="icon" type="image/png" href="norvak-tinygpt-version.png" sizes="32x32">
+    
+
+</head>
+<body>
+  <div class="container">
+        <img src="https://www.walmart.com/favicon.ico" alt="Walmart Logo" class="walmart-logo">
+
+    <h1>🛠️ Walmart Inventory QA Log</h1>
+    
+
+    <input type="text" id="location" placeholder="Location (e.g. F-C05-278-C)">
+
+    <div id="upc-entry-area">
+    </div>
+
+    <button class="btn" onclick="addEntryRow()">Add UPC</button>
+    <button class="btn" onclick="logAllEntries()">Log All UPCs</button>
+    <button class="btn" onclick="exportTableToCSV()">Export CSV</button>
+    <button class="btn" onclick="window.print()">Print</button>
+
+<div class="filter-wrap">
+  <input type="text" id="filter" onkeyup="filterTable()" placeholder="🔍 Filter by UPC, Location, or Notes...">
+</div>
+
+    <table id="logTable">
+      <thead>
+        <tr>
+          <th>Timestamp</th>
+          <th>Location</th>
+          <th>UPC</th>
+          <th>Found</th>
+          <th>System</th>
+          <th>Discrepancy</th>
+          <th>Notes</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+  <script src="script.js"></script>
+</body>
+<footer>
+    <p>Walmart Inventory QA Log is a tool to help you keep track of inventory discrepancies and notes.</p>
+
+    <p>Made with ❤ by <a href="file:///C:/Users/corte/Desktop/VS%20code/Norvak%20WD/index.html" target="_blank">
+     Norvak</a> &copy; 2025 | All rights reserved</p>
+     <img src="https://i.imgur.com/f2KIXDz.png" alt="Norvak logo" class="norvak-icon">
+    
+</footer>
+</html>

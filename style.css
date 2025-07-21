@@ -1,0 +1,234 @@
+/* style.css */
+
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #0e0e0e;
+  color: #ffffff;
+  margin: 0;
+  padding: 20px;
+    line-height: 1.6;
+    overflow-x: hidden;
+    text-align: center;
+}
+
+h1 {
+  color: #00d4ff;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  background: #1a1a1a;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 25px rgba(0, 255, 204, 0.4);
+  transition: all 0.3s ease-in-out;
+}
+
+input, textarea {
+  width: calc(50% - 12px);
+  padding: 12px;
+  margin: 6px;
+  border-radius: 8px;
+  border: none;
+  font-size: 15px;
+}
+
+button.btn {
+  width: auto;
+  padding: 10px 16px;
+  margin: 6px 6px 0 0;
+  border-radius: 6px;
+  border: none;
+  background: #00d4ff;
+  color: #000;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+button.btn:hover {
+  background: #00ffcc;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+th, td {
+  border: 1px solid #333;
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #00d4ff;
+  color: #000;
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background-color: #121212;
+}
+
+#filter {
+  width: calc(50% - 12px);
+  margin: 12px 6px;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 15px;
+  display: block;
+    background: #1a1a1a;
+    color: #ffffff;
+    border: 1px solid #333;
+    text-align: center;
+}
+
+.filter-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#filter {
+  width: 60%;
+  max-width: 500px;
+  margin: 12px auto;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 15px;
+  background: #1a1a1a;
+  color: #ffffff;
+  border: 1px solid #333;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+
+#filter:focus {
+  outline: none;
+  box-shadow: 0 0 10px #00d4ff;
+  background: #111;
+}
+
+
+@media print {
+  body {
+    background: white;
+    color: black;
+  }
+
+  .container {
+    box-shadow: none;
+    background: white;
+    color: black;
+  }
+
+  .btn, #filter, input, textarea {
+    display: none;
+    background: transparent;
+    color: black;   
+  }
+
+  table, th, td {
+    border: 1px solid #000;
+    color: black;
+  }
+}
+
+p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-top: 20px;
+    color: #cccccc; 
+    text-align: center;
+}
+
+input, textarea {
+  width: calc(50% - 12px);
+  padding: 12px;
+  margin: 6px;
+  border-radius: 10px;
+  border: none;
+  font-size: 15px;
+  background: #1f1f1f;
+  color: #fff;
+  box-shadow: inset 0 0 5px rgba(0, 255, 204, 0.1);
+  transition: all 0.2s ease;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  background: #262626;
+  box-shadow: 0 0 8px #00ffcc;
+}
+
+button.btn {
+  background: linear-gradient(145deg, #00d4ff, #00ffcc);
+  color: #000;
+  border-radius: 30px;
+  padding: 12px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  margin: 6px;
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+button.btn:hover {
+  transform: scale(1.05);
+  background: linear-gradient(145deg, #00ffcc, #00d4ff);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background: #181818;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0, 255, 204, 0.15);
+}
+
+th {
+  background: #00d4ff;
+  color: #000;
+  font-size: 15px;
+  padding: 14px;
+}
+
+td {
+  padding: 12px;
+  font-size: 14px;
+  color: #fff;
+}
+
+.entry-group {
+  animation: fadeIn 0.4s ease forwards;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(10px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.norvak-icon {
+  width: 60px;
+  height: 60px;
+  transition: transform 0.2s ease, filter 0.3s ease;
+  filter: drop-shadow(0 0 5px rgba(0, 255, 204, 0.3));
+}
+
+.norvak-icon:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 10px rgba(0, 255, 204, 0.6));
+}
+
