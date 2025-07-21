@@ -1,4 +1,4 @@
-\// script.js (Norvak Style Edition)
+// script.js (Norvak Style Edition)
 
 function addEntryRow() {
   const area = document.getElementById('upc-entry-area');
@@ -98,4 +98,3 @@ window.onload = function () {
   loadFromLocalStorage();
   addEntryRow();
 };
-
