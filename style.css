@@ -1,15 +1,14 @@
 /* style.css */
 
-
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background: #0e0e0e;
   color: #ffffff;
   margin: 0;
   padding: 20px;
-    line-height: 1.6;
-    overflow-x: hidden;
-    text-align: center;
+  line-height: 1.6;
+  overflow-x: hidden;
+  text-align: center;
 }
 
 h1 {
@@ -26,130 +25,6 @@ h1 {
   border-radius: 15px;
   box-shadow: 0 0 25px rgba(0, 255, 204, 0.4);
   transition: all 0.3s ease-in-out;
-}
-
-input, textarea {
-  width: calc(50% - 12px);
-  padding: 12px;
-  margin: 6px;
-  border-radius: 8px;
-  border: none;
-  font-size: 15px;
-}
-
-button.btn {
-  width: auto;
-  padding: 10px 16px;
-  margin: 6px 6px 0 0;
-  border-radius: 6px;
-  border: none;
-  background: #00d4ff;
-  color: #000;
-  font-size: 14px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background 0.2s ease;
-}
-
-button.btn:hover {
-  background: #00ffcc;
-}
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 20px;
-  border-radius: 10px;
-  overflow: hidden;
-}
-
-th, td {
-  border: 1px solid #333;
-  padding: 12px;
-  text-align: left;
-}
-
-th {
-  background-color: #00d4ff;
-  color: #000;
-  font-weight: bold;
-}
-
-tr:nth-child(even) {
-  background-color: #121212;
-}
-
-#filter {
-  width: calc(50% - 12px);
-  margin: 12px 6px;
-  padding: 12px;
-  border-radius: 8px;
-  font-size: 15px;
-  display: block;
-    background: #1a1a1a;
-    color: #ffffff;
-    border: 1px solid #333;
-    text-align: center;
-}
-
-.filter-wrap {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
-}
-
-#filter {
-  width: 60%;
-  max-width: 500px;
-  margin: 12px auto;
-  padding: 12px;
-  border-radius: 8px;
-  font-size: 15px;
-  background: #1a1a1a;
-  color: #ffffff;
-  border: 1px solid #333;
-  text-align: center;
-  transition: all 0.2s ease;
-}
-
-#filter:focus {
-  outline: none;
-  box-shadow: 0 0 10px #00d4ff;
-  background: #111;
-}
-
-
-@media print {
-  body {
-    background: white;
-    color: black;
-  }
-
-  .container {
-    box-shadow: none;
-    background: white;
-    color: black;
-  }
-
-  .btn, #filter, input, textarea {
-    display: none;
-    background: transparent;
-    color: black;   
-  }
-
-  table, th, td {
-    border: 1px solid #000;
-    color: black;
-  }
-}
-
-p {
-  font-size: 14px;
-  line-height: 1.6;
-  margin-top: 20px;
-    color: #cccccc; 
-    text-align: center;
 }
 
 input, textarea {
@@ -180,6 +55,7 @@ button.btn {
   font-weight: 600;
   border: none;
   margin: 6px;
+  cursor: pointer;
   transition: transform 0.2s ease, background 0.3s ease;
 }
 
@@ -198,6 +74,13 @@ table {
   box-shadow: 0 0 15px rgba(0, 255, 204, 0.15);
 }
 
+th, td {
+  border: 1px solid #333;
+  padding: 12px;
+  text-align: left;
+  font-size: 14px;
+}
+
 th {
   background: #00d4ff;
   color: #000;
@@ -205,10 +88,43 @@ th {
   padding: 14px;
 }
 
-td {
+tr:nth-child(even) {
+  background-color: #121212;
+}
+
+#filter {
+  width: 60%;
+  max-width: 500px;
+  margin: 12px auto;
   padding: 12px;
+  border-radius: 8px;
+  font-size: 15px;
+  background: #1a1a1a;
+  color: #ffffff;
+  border: 1px solid #333;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+
+#filter:focus {
+  outline: none;
+  box-shadow: 0 0 10px #00d4ff;
+  background: #111;
+}
+
+.filter-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+p {
   font-size: 14px;
-  color: #fff;
+  line-height: 1.6;
+  margin-top: 20px;
+  color: #cccccc;
+  text-align: center;
 }
 
 .entry-group {
@@ -232,3 +148,26 @@ td {
   filter: drop-shadow(0 0 10px rgba(0, 255, 204, 0.6));
 }
 
+@media print {
+  body {
+    background: white;
+    color: black;
+  }
+
+  .container {
+    box-shadow: none;
+    background: white;
+    color: black;
+  }
+
+  .btn, #filter, input, textarea {
+    display: none;
+    background: transparent;
+    color: black;
+  }
+
+  table, th, td {
+    border: 1px solid #000;
+    color: black;
+  }
+}
